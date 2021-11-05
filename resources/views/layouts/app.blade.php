@@ -17,6 +17,7 @@
 
         <!-- Scripts -->
         <script src="{{ mix('js/app.js') }}" defer></script>
+        <script src="https://cdn.ckeditor.com/4.16.2/standard/ckeditor.js"></script>
     </head>
     <body class="font-sans antialiased">
         <x-jet-banner />
@@ -41,6 +42,8 @@
 
         @stack('modals')
 
+        
         @livewireScripts
+        @stack('scripts')
     </body>
 </html>

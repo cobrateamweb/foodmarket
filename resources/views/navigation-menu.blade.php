@@ -17,6 +17,16 @@
                     </x-jet-nav-link>
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-jet-nav-link href="/dashboard/training" :active="request()->routeIs('dashboard/training')">
+                        {{ __('Training') }}
+                    </x-jet-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-jet-nav-link href="/dashboard/information" :active="request()->routeIs('dashboard/information')">
+                        {{ __('Information') }}
+                    </x-jet-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-jet-nav-link href="/dashboard/food" :active="request()->routeIs('dashboard/food')">
                         {{ __('Food') }}
                     </x-jet-nav-link>

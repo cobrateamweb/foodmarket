@@ -1,6 +1,8 @@
 <?php
 
 use App\Http\Controllers\API\FoodController;
+use App\Http\Controllers\API\InformationController;
+use App\Http\Controllers\API\TrainingController;
 use App\Http\Controllers\API\MidtransController;
 use App\Http\Controllers\API\UserController;
 use App\Http\Controllers\API\TransactionController;
@@ -34,6 +36,8 @@ Route::post('login', [UserController::class, 'login']);
 Route::post('register', [UserController::class, 'register']);
 
 Route::get('food', [FoodController::class, 'all']);
+Route::get('information', [InformationController::class, 'all']);
+Route::get('training', [TrainingController::class, 'all']);
 Route::post('midtrans/callback', [MidtransController::class, 'callback']);
 
 // Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
